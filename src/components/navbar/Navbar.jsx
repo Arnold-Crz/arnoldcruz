@@ -1,4 +1,10 @@
 import React from 'react';
+import Vectorcontact from '../../../assets/Vectorcontact';
+import Vectorhome from '../../../assets/Vectorhome';
+import Vectormenu from '../../../assets/Vectormenu';
+import Vectorproyects from '../../../assets/Vectorproyects';
+import Vectorservices from '../../../assets/Vectorservices';
+import Vectorclose from '../../../assets/Vectorclose';
 import './navbar.sass';
 
 function Navbar() {
@@ -17,6 +23,38 @@ function Navbar() {
           <a href="#">Contacto</a>
           <span className="start-home effect"></span>
         </ul>
+        <div className="navMenuMobil active">
+          <ul className="navItemMenuMobil grid">
+            <li className="navListmobil">
+              <a href="#" className="navLinkMobile">
+                <Vectorhome />
+                Inicio
+              </a>
+            </li>
+            <li className="navListmobil">
+              <a href="#" className="navLinkMobile">
+                <Vectorcontact />
+                Contact
+              </a>
+            </li>
+            <li className="navListmobil">
+              <a href="#" className="navLinkMobile">
+                <Vectorproyects />
+                Proyectos
+              </a>
+            </li>
+            <li className="navListmobil">
+              <a href="#" className="navLinkMobile">
+                <Vectorservices />
+                Servicios
+              </a>
+            </li>
+          </ul>
+          <div className="navMobileClose">
+            <Vectorclose />
+          </div>
+        </div>
+
         <ul className="navItemSocial">
           <a href="#">
             <img src="../../../assets/Vectorgithub.svg" alt="Github" />
@@ -29,11 +67,8 @@ function Navbar() {
           </a>
         </ul>
 
-        <img
-          className="toggleMenu"
-          src="../../../assets/Vectormenu.svg"
-          alt=""
-        />
+        <div className="toggleMenu" />
+        <Vectormenu />
       </div>
     </nav>
   );

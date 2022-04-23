@@ -1,3 +1,7 @@
+.grid
+  display: grid
+  gap: 1.5rem
+
 .navContainer
   display: flex
   max-width: 100%
@@ -82,8 +86,54 @@
     align-items: center
     gap: 20px
 
-@media (max-width: 576px)
+@media (max-width: 768px)
   .navContainer
+    position: fixed
+    bottom: 0
+    right: 0
+    left: 0
+
+    & .navMenuMobil
+      position: fixed
+      bottom: -500px
+      left: 0
+      background-color: #312F2F
+      width: 100%
+      transition: 0.5s ease-in-out
+      padding: 2rem 1.5rem 4rem
+      border-radius: 1.5rem 1.5rem 0 0
+
+    & .navMenuMobil.active
+      bottom: 0
+
+    & .navItemMenuMobil
+      grid-template-columns: repeat(2, 1fr)
+      align-items: center
+
+      gap: 2rem
+
+    & .navListmobil
+      display: flex
+      justify-content: center
+      align-items: center
+      & a
+        margin-top: 5px
+        color: #F5EDED
+
+    & .navLinkMobile
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      gap: 0.5rem
+
+    & .navMobileClose
+      position: absolute
+      bottom: .1rem
+      right: .8rem
+      cursor: pointer
+      &:hover
+        fill: #F49600
 
     & .navItemMenu
       display: none
