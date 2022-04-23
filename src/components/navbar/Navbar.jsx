@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Vectorcontact from '../../../assets/Vectorcontact';
 import Vectorhome from '../../../assets/Vectorhome';
 import Vectormenu from '../../../assets/Vectormenu';
@@ -8,6 +8,10 @@ import Vectorclose from '../../../assets/Vectorclose';
 import './navbar.sass';
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => setIsOpen(!isOpen);
+
   return (
     <nav className="navContainer">
       <div className="navList">
@@ -23,7 +27,7 @@ function Navbar() {
           <a href="#">Contacto</a>
           <span className="start-home effect"></span>
         </ul>
-        <div className="navMenuMobil active">
+        <div className={`navMenuMobil ${isOpen ? 'active' : ''}`}>
           <ul className="navItemMenuMobil grid">
             <li className="navListmobil">
               <a href="#" className="navLinkMobile">
@@ -31,12 +35,7 @@ function Navbar() {
                 Inicio
               </a>
             </li>
-            <li className="navListmobil">
-              <a href="#" className="navLinkMobile">
-                <Vectorcontact />
-                Contact
-              </a>
-            </li>
+
             <li className="navListmobil">
               <a href="#" className="navLinkMobile">
                 <Vectorproyects />
@@ -49,9 +48,15 @@ function Navbar() {
                 Servicios
               </a>
             </li>
+            <li className="navListmobil">
+              <a href="#" className="navLinkMobile">
+                <Vectorcontact />
+                Contact
+              </a>
+            </li>
           </ul>
           <div className="navMobileClose">
-            <Vectorclose />
+            <Vectorclose onClick={handleOpen} />
           </div>
         </div>
 
@@ -67,8 +72,9 @@ function Navbar() {
           </a>
         </ul>
 
-        <div className="toggleMenu" />
-        <Vectormenu />
+        <div className="toggleMenu">
+          <Vectormenu onClick={handleOpen} />
+        </div>
       </div>
     </nav>
   );

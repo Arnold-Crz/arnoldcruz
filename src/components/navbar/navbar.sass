@@ -7,9 +7,6 @@
   max-width: 100%
   margin: 0 auto
 
-  .toggleMenu
-    display: none
-
   .navList
     display: flex
     justify-content: space-between
@@ -19,8 +16,13 @@
     padding: 0 30px
     background-color: #312F2F
 
-  .navItemLogo
+    & .toggleMenu
+      display: none
 
+    & .navMenuMobil
+      display: none
+
+  .navItemLogo
     display: flex
     align-items: center
     justify-content: center
@@ -97,6 +99,7 @@
       position: fixed
       bottom: -500px
       left: 0
+      right: 0
       background-color: #312F2F
       width: 100%
       transition: 0.5s ease-in-out
@@ -135,11 +138,15 @@
       &:hover
         fill: #F49600
 
-    & .navItemMenu
-      display: none
+    .navList
+      & .navItemMenu
+        display: none
 
-    & .navItemSocial
-      display: none
+      & .navItemSocial
+        display: none
 
-    & .toggleMenu
-      display: block
+      & .toggleMenu
+        display: block
+
+      & .navMenuMobil
+        display: block
