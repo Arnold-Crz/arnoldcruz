@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+  font-family: poppins, 'sans-serif';
+  font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1400 - 300)));
+  max-width: 1440px;
+  min-width: 360px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
