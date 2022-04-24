@@ -20,7 +20,7 @@ function Home() {
     <>
       <Navbar />
       <div className="home">
-        <h1>Hola👋,soy</h1>
+        <h1>Hola👋, soy</h1>
         <div className="homeContent">
           <div className="homeContenHeader">
             <div className="homeContentImg">
@@ -44,7 +44,7 @@ function Home() {
               </ul>
             </div>
           </div>
-          <div>
+          <div className="HomeContentSocial">
             <ul>
               <li>
                 <img src={Vectortwitter} alt="Vectortwitter" />
@@ -59,11 +59,14 @@ function Home() {
                 <img src={Vectorwhatsapp} alt="Vectorwhatsapp" />
               </li>
             </ul>
-            <div>
-              <h2>Arnold cruz</h2>
-              <p>Desarrollador Frontend</p>
-              <p>Ingeniero de Software especializado en las tecnologias web </p>
-            </div>
+          </div>
+          <div className="HomeContentInfo">
+            <h2>Arnold cruz</h2>
+            <p>Desarrollador Frontend</p>
+            <p>Ingeniero de Software especializado en las tecnologias web </p>
+          </div>
+
+          <div className="BtnCv">
             <a href="#">CV</a>
           </div>
         </div>
