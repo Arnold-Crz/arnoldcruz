@@ -7,8 +7,8 @@ import './project.sass';
 function Project({ project }) {
   return (
     <div className="CardContainer">
-      {project.map(({ id, imgOne, title, description, paragraph, tags }) => (
-        <div className="CardItem" key={id}>
+      {project.map(({ imgOne, title, description, paragraph, tags }, index) => (
+        <div className="CardItem" key={index}>
           <a href="#">
             <img src={ImgCompartir} alt="enlace" />
           </a>

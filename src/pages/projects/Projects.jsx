@@ -12,7 +12,7 @@ import ImgFigma from '../../../assets/figma.svg';
 
 const projects = [
   {
-    id: 1,
+    id: [1],
     imgOne: ImgProject,
     title: 'Web',
     description: 'landing page food',
@@ -42,7 +42,7 @@ const projects = [
     ],
   },
   {
-    id: 2,
+    id: [2],
     imgOne: ImgProject,
     title: 'Diseño',
     description: 'landing page food',
@@ -55,7 +55,7 @@ const projects = [
     ],
   },
   {
-    id: 3,
+    id: [1],
     imgOne: ImgProject,
     title: 'Web',
     description: 'landing page servicios',
@@ -84,7 +84,7 @@ const projects = [
     ],
   },
   {
-    id: 4,
+    id: [2],
     imgOne: ImgProject,
     title: 'Diseño',
     description: 'landing page servicios',
@@ -100,44 +100,19 @@ const projects = [
 
 function Proyects() {
   const [project, setProject] = useState(projects);
-  const [All, setAll] = useState(true);
-  const [Web, setWeb] = useState(false);
-  const [Design, setDesign] = useState(false);
+  const [filter, setfilter] = useState(0);
 
-  const all = () => {
-    setAll(!All);
-    setWeb(false);
-    setDesign(false);
-  };
+  useEffect(() => {
+    if (filter === 0) {
+      setProject(projects);
+      return;
+    }
+    const filterProject = projects.filter((project) =>
+      project.id.includes(filter)
+    );
 
-  const web = () => {
-    setWeb(!Web);
-    setAll(false);
-    setDesign(false);
-  };
-
-  const design = () => {
-    setDesign(!Design);
-    setAll(false);
-    setWeb(false);
-  };
-
-  const filterAll = () => {
-    setProject(projects);
-    all();
-  };
-
-  const filterDesing = () => {
-    const filter = projects.filter((project) => project.title !== 'Web');
-    setProject(filter);
-    design();
-  };
-
-  const filterWeb = () => {
-    const filter = projects.filter((project) => project.title !== 'Diseño');
-    setProject(filter);
-    web();
-  };
+    setProject(filterProject);
+  }, [filter]);
 
   return (
     <section className="ProyectosContainer">
@@ -146,14 +121,23 @@ function Proyects() {
         <span>PROYECTOS</span>
       </h1>
       <div className="ProyectosFilter">
-        <button onClick={filterAll} className={`${All ? 'active' : ''}`}>
+        <button
+          onClick={() => setfilter(0)}
+          className={`${filter === 0 ? 'active' : ''}`}
+        >
           All
         </button>
-        <button onClick={filterDesing} className={`${Design ? 'active' : ''}`}>
-          Diseños
-        </button>
-        <button onClick={filterWeb} className={`${Web ? 'active' : ''}`}>
+        <button
+          onClick={() => setfilter(1)}
+          className={`${filter === 1 ? 'active' : ''}`}
+        >
           Desarrollo
+        </button>
+        <button
+          onClick={() => setfilter(2)}
+          className={`${filter === 2 ? 'active' : ''}`}
+        >
+          Diseños
         </button>
       </div>
       <Project project={project} />
