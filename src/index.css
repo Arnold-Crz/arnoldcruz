@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  font-family: poppins, 'sans-serif';
   font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1400 - 300)));
   max-width: 1440px;
   min-width: 360px;
@@ -19,7 +18,16 @@ body {
 }
 html,
 body {
+  font-family: 'Poppins', sans-serif;
   min-height: 100vh;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
 }
 
 a {

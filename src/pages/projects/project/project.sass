@@ -1,0 +1,46 @@
+.CardContainer
+  width: 100%
+  display: grid
+  grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) )
+  align-items: center
+  justify-items: center
+  gap: 40px
+  margin-top: 41px
+
+  .CardItem
+    position: relative
+    width: 75%
+    height: 300px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 10px
+    background-color: #F5EDED
+    border-radius: 10px
+    padding: 10px
+
+    & .imgproject
+      max-width: 100%
+      height: 100%
+      object-fit: cover
+    & a img
+      position: absolute
+      top: -26px
+      right: -23px
+    & h3
+      align-self: flex-start
+    & p
+      align-self: flex-start
+    & .ContainerTags
+      width: 100%
+      display: flex
+      gap: 20px
+      & .Tag
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        & img
+          width: 24px
+          height: 24px

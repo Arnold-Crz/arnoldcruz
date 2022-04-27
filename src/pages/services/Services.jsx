@@ -47,31 +47,29 @@ function Services() {
   };
 
   return (
-    <div className="ServiciosContent">
+    <section className="ServiciosContainer">
       <h1>
         SERVICIOS
         <span>SERVICIOS</span>
       </h1>
-      <section>
-        <article>
-          {services.map(({ id, title, img, descriptionBack }) => (
-            <div className="ServicesData" key={id}>
-              <h2 className="color">{title}</h2>
-              <img src={img} alt="servicesOne" />
-              <button onClick={(e) => handleOpen(e)}>Ver mas</button>
-              <div className="MasInfo">
-                <h3>{descriptionBack}</h3>
-                <img
-                  src={IconArrow}
-                  alt="arrow"
-                  onClick={(e) => handleClose(e)}
-                />
-              </div>
+      <article>
+        {services.map(({ id, title, img, descriptionBack }) => (
+          <div className="ServicesData" key={id}>
+            <h2 className="color">{title}</h2>
+            <img src={img} alt="servicesOne" />
+            <button onClick={(e) => handleOpen(e)}>Ver mas</button>
+            <div className="MasInfo">
+              <h3>{descriptionBack}</h3>
+              <img
+                src={IconArrow}
+                alt="arrow"
+                onClick={(e) => handleClose(e)}
+              />
             </div>
-          ))}
-        </article>
-      </section>
-    </div>
+          </div>
+        ))}
+      </article>
+    </section>
   );
 }
 

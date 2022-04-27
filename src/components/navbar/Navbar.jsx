@@ -5,6 +5,9 @@ import Vectormenu from '../../../assets/Vectormenu';
 import Vectorproyects from '../../../assets/Vectorproyects';
 import Vectorservices from '../../../assets/Vectorservices';
 import Vectorclose from '../../../assets/Vectorclose';
+import LinkedinSvg from '../../../assets/Vectorlinkeding.svg';
+import InstagramSvg from '../../../assets/Vectorinstagram.svg';
+import GithubSvg from '../../../assets/Vectorgithub.svg';
 import './navbar.sass';
 
 function Navbar() {
@@ -62,13 +65,13 @@ function Navbar() {
 
         <ul className="navItemSocial">
           <a href="#">
-            <img src="../../../assets/Vectorgithub.svg" alt="Github" />
+            <img src={LinkedinSvg} alt="linkedin" />
           </a>
           <a href="#">
-            <img src="../../../assets/Vectorlinkedin.svg" alt="Linkedin" />
+            <img src={InstagramSvg} alt="instagram" />
           </a>
           <a href="#">
-            <img src="../../../assets/Vectortwitter.svg" alt="Twitter" />
+            <img src={GithubSvg} alt="github" />
           </a>
         </ul>
 
