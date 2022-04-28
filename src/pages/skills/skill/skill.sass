@@ -1,0 +1,40 @@
+.Skills
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  width: 300px
+  border-radius: 10px
+  padding: 10px
+  background-color: #f5eded
+  box-shadow: 0 4.16px 8.32px -3.12px rgba(0, 0, 0, 0.555)
+  margin-top: 15px
+  & .FrondIcon
+    width: 45px
+    height: 28px
+    margin-bottom: 10px
+  & .DownArrow
+    width: 20px
+    height: 20px
+    transition: 0.5s ease-in-out
+
+    &.active
+      transform: rotate(180deg)
+      animation: none
+  & .ContentIcons
+    display: flex
+    justify-content: space-around
+    align-items: center
+    width: 100%
+    opacity: 0
+    height: 0
+    transition: 0.5s ease-in-out
+    &.active
+      display: flex
+      justify-content: space-around
+      align-items: center
+      width: 100%
+      height: 50px
+      margin-top: 10px
+      opacity: 1
+      transition: 0.5s ease-in-out

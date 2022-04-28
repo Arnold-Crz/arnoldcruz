@@ -6,6 +6,7 @@
   justify-items: center
   gap: 40px
   margin-top: 41px
+  animation: filter 0,5s ease-in-out
 
   .CardItem
     position: relative
@@ -44,3 +45,8 @@
         & img
           width: 24px
           height: 24px
+@keyframes filter
+  0%
+    opacity: 0
+  100%
+    opacity: 1
