@@ -33,28 +33,36 @@ function Navbar() {
         <div className={`navMenuMobil ${isOpen ? 'active' : ''}`}>
           <ul className="navItemMenuMobil grid">
             <li className="navListmobil">
-              <a href="#" className="navLinkMobile">
+              <a onClick={handleOpen} href="#home" className="navLinkMobile">
                 <Vectorhome />
                 Inicio
               </a>
             </li>
 
             <li className="navListmobil">
-              <a href="#" className="navLinkMobile">
+              <a
+                onClick={handleOpen}
+                href="#proyectos"
+                className="navLinkMobile"
+              >
                 <Vectorproyects />
                 Proyectos
               </a>
             </li>
             <li className="navListmobil">
-              <a href="#" className="navLinkMobile">
+              <a
+                onClick={handleOpen}
+                href="#servicios"
+                className="navLinkMobile"
+              >
                 <Vectorservices />
                 Servicios
               </a>
             </li>
             <li className="navListmobil">
-              <a href="#" className="navLinkMobile">
+              <a onClick={handleOpen} href="#skills" className="navLinkMobile">
                 <Vectorcontact />
-                Contact
+                skills
               </a>
             </li>
           </ul>

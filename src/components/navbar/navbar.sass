@@ -31,12 +31,23 @@
     height: 40px
     border-radius: 10px
     border: #F49600 solid 2px
-
+    border-image-outset: linear-gradient(92deg, #f35626, #feab3a)
+    animation: neon 10s infinite linear
     & a
       font-size: 1rem
       font-weight: 600
       color: #F5EDED
+      //background-images: linear-gradient(92deg, #f35626, #feab3a)
+      //background-clip: text
+      //text-fill-color: transparent
+      //animation: neon 10s infinite linear
 
+      @keyframes neon
+        0%
+          filter: hue-rotate(0deg)
+
+        100%
+          filter: hue-rotate(360deg)
   .navItemMenu
     display: flex
     align-items: center

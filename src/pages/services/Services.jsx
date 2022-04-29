@@ -47,7 +47,7 @@ function Services() {
   };
 
   return (
-    <section className="ServiciosContainer">
+    <section className="ServiciosContainer" id="servicios">
       <h1>
         SERVICIOS
         <span>SERVICIOS</span>

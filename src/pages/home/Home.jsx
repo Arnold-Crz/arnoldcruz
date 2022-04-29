@@ -17,61 +17,59 @@ import './home.sass';
 
 function Home() {
   return (
-    <>
+    <section className="home" id="home">
       <Navbar />
-      <div className="home">
-        <h1>Hola👋, soy</h1>
-        <div className="homeContent">
-          <div className="homeContenHeader">
-            <div className="homeContentImg">
-              <img src="../../../assets/my.png" alt="cruz" />
-              <ul>
-                <li>
-                  <img src={Homejavascripts} alt="Homejavascripts" />
-                </li>
-                <li>
-                  <img src={Homecss} alt="Homecss" />
-                </li>
-                <li>
-                  <img src={Homehtml} alt="Homehtml" />
-                </li>
-                <li>
-                  <img src={Homenext} alt="Homenext" />
-                </li>
-                <li>
-                  <img src={Homereact} alt="Homereact" />
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="HomeContentSocial">
+      <h1>Hola👋, soy</h1>
+      <div className="homeContent">
+        <div className="homeContenHeader">
+          <div className="homeContentImg">
+            <img src="../../../assets/my.png" alt="cruz" />
             <ul>
               <li>
-                <img src={Vectortwitter} alt="Vectortwitter" />
+                <img src={Homejavascripts} alt="Homejavascripts" />
               </li>
               <li>
-                <img src={Vectorlinkedin} alt="Vectorlinkedin" />
+                <img src={Homecss} alt="Homecss" />
               </li>
               <li>
-                <img src={VectorInstagram} alt="VectorInstagram" />
+                <img src={Homehtml} alt="Homehtml" />
               </li>
               <li>
-                <img src={Vectorwhatsapp} alt="Vectorwhatsapp" />
+                <img src={Homenext} alt="Homenext" />
+              </li>
+              <li>
+                <img src={Homereact} alt="Homereact" />
               </li>
             </ul>
           </div>
-          <div className="HomeContentInfo">
-            <h2>Arnold cruz</h2>
-            <p>Desarrollador Frontend</p>
-            <p>Ingeniero de Software especializado en las tecnologias web </p>
-          </div>
+        </div>
+        <div className="HomeContentSocial">
+          <ul>
+            <li>
+              <img src={Vectortwitter} alt="Vectortwitter" />
+            </li>
+            <li>
+              <img src={Vectorlinkedin} alt="Vectorlinkedin" />
+            </li>
+            <li>
+              <img src={VectorInstagram} alt="VectorInstagram" />
+            </li>
+            <li>
+              <img src={Vectorwhatsapp} alt="Vectorwhatsapp" />
+            </li>
+          </ul>
+        </div>
+        <div className="HomeContentInfo">
+          <h2>Arnold cruz</h2>
+          <p>Desarrollador Frontend</p>
+          <p>Ingeniero de Software especializado en las tecnologias web </p>
+        </div>
 
-          <div className="BtnCv">
-            <a href="#">CV</a>
-          </div>
+        <div className="BtnCv">
+          <a href="#">CV</a>
         </div>
       </div>
-    </>
+    </section>
   );
 }
 

@@ -4,6 +4,7 @@ html {
   max-width: 1440px;
   min-width: 360px;
   width: 100%;
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 

@@ -115,7 +115,7 @@ function Proyects() {
   }, [filter]);
 
   return (
-    <section className="ProyectosContainer">
+    <section className="ProyectosContainer" id="proyectos">
       <h1>
         PROYECTOS
         <span>PROYECTOS</span>
