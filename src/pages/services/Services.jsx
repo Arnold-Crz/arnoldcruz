@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './services.sass';
 
@@ -32,18 +32,31 @@ const services = [
 ];
 
 function Services() {
-  const handleOpen = (e) => {
-    const ClassOne = e.target.nextElementSibling;
+  const [Open, setOpen] = useState(0);
+
+  /*  const handleOpen = (e) => {
+    // Forma de aplicar clases a un elemento no recomendable en React
+     const ClassOne = e.target.nextElementSibling;
     if (ClassOne !== 'active') {
       ClassOne.classList.add('active');
-    }
-  };
+    } 
+  }; */
 
-  const handleClose = (e) => {
-    const ClassTwo = e.target.parentElement;
+  /*   const handleClose = (e) => {
+  //Forma de remover clases a un elemento no recomendable en React
+     const ClassTwo = e.target.parentElement;
     if (ClassTwo !== 'active') {
       ClassTwo.classList.remove('active');
-    }
+    }  
+  }; */
+
+  const handleOpen = (e) => {
+    const id = +e.target.id;
+    setOpen(id);
+  };
+
+  const handleClose = () => {
+    setOpen(0);
   };
 
   return (
@@ -57,14 +70,12 @@ function Services() {
           <div className="ServicesData" key={id}>
             <h2 className="color">{title}</h2>
             <img src={img} alt="servicesOne" />
-            <button onClick={(e) => handleOpen(e)}>Ver mas</button>
-            <div className="MasInfo">
+            <button id={id} onClick={handleOpen}>
+              Ver mas
+            </button>
+            <div className={`MasInfo ${Open === id ? 'active' : ''}`}>
               <h3>{descriptionBack}</h3>
-              <img
-                src={IconArrow}
-                alt="arrow"
-                onClick={(e) => handleClose(e)}
-              />
+              <img src={IconArrow} alt="arrow" onClick={handleClose} />
             </div>
           </div>
         ))}
