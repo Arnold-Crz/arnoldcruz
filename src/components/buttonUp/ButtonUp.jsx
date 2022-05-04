@@ -3,17 +3,16 @@ import BtnUp from '../../../assets/btnup.svg';
 import './button.sass';
 
 function ButtonUp() {
+  const [isVisible, setIsVisible] = useState(false);
   const handleClick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const refUp = useRef();
-
   const handleScroll = () => {
     if (window.pageYOffset > 500) {
-      refUp.current?.classList?.add('active');
+      setIsVisible(true);
     } else {
-      refUp.current?.classList?.remove('active');
+      setIsVisible(false);
     }
   };
 
@@ -22,7 +21,10 @@ function ButtonUp() {
   }, []);
 
   return (
-    <button ref={refUp} className="ButtonUp" onClick={handleClick}>
+    <button
+      className={`Button__Up ${isVisible ? 'active' : ''}`}
+      onClick={handleClick}
+    >
       <img src={BtnUp} alt="up" />
     </button>
   );
