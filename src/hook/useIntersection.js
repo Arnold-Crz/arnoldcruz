@@ -1,15 +1,15 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
-const useIntersection = ({ elementObserver }) => {
-  const [show, setShow] = useState(false);
+const useIntersection = () => {
+  const [showScreen, setShowScreen] = useState(false);
+  const elemenRef = useRef(null);
   let observer;
 
   useEffect(() => {
     const callback = (entries, observer) => {
       const el = entries[0];
       if (el.isIntersecting) {
-        console.log(el.isIntersecting);
-        setShow(true);
+        setShowScreen(true);
         observer.disconnect();
       }
       return () => observer.disconnect();
@@ -23,10 +23,10 @@ const useIntersection = ({ elementObserver }) => {
 
     observer = new IntersectionObserver(callback, options);
 
-    observer.observe(elementObserver.current);
-  }, []);
+    observer.observe(elemenRef.current);
+  }, [showScreen, elemenRef]);
 
-  return show;
+  return { showScreen, elemenRef };
 };
 
 export default useIntersection;
