@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 
 import './services.sass';
 
-import ImgServicesOne from '../../../assets/imgone.svg';
-import ImgServicesTwo from '../../../assets/imgtwo.svg';
-import ImgServicesThree from '../../../assets/imgthree.svg';
-import IconArrow from '../../../assets/servicesarrow.svg';
+import ImgServicesOne from '../../assets/imgone.svg';
+import ImgServicesTwo from '../../assets/imgtwo.svg';
+import ImgServicesThree from '../../assets/imgthree.svg';
+import IconArrow from '../../assets/servicesarrow.svg';
 
 const services = [
   {

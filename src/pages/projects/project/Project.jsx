@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ImgCompartir from '../../../../assets/compartir.svg';
+import ImgCompartir from '../../../assets/compartir.svg';
 
 import './project.sass';
 

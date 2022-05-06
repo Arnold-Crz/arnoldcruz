@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import Project from './project/Project';
 import './projects.sass';
 
-import ImgProject from '../../../assets/imgproject.svg';
-import ImgCss from '../../../assets/css.svg';
-import ImgHtml from '../../../assets/html.svg';
-import ImgJs from '../../../assets/javascripts.svg';
-import ImgReact from '../../../assets/react.svg';
-import ImgSass from '../../../assets/sass.svg';
-import ImgFigma from '../../../assets/figma.svg';
+import ImgProject from '../../assets/imgproject.svg';
+import ImgCss from '../../assets/css.svg';
+import ImgHtml from '../../assets/html.svg';
+import ImgJs from '../../assets/javascripts.svg';
+import ImgReact from '../../assets/react.svg';
+import ImgSass from '../../assets/sass.svg';
+import ImgFigma from '../../assets/figma.svg';
 
 const projects = [
   {

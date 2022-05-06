@@ -1,15 +1,16 @@
-import React from 'react';
-import Homejavascripts from '../../../assets/homejavascripts.svg';
-import Homecss from '../../../assets/homecss.svg';
-import Homehtml from '../../../assets/homehtml.svg';
-import Homenext from '../../../assets/homenext.svg';
-import Homereact from '../../../assets/homereact.svg';
+import My from '../../assets/my.png';
+
+import Homejavascripts from '../../assets/homejavascripts.svg';
+import Homecss from '../../assets/homecss.svg';
+import Homehtml from '../../assets/homehtml.svg';
+import Homenext from '../../assets/homenext.svg';
+import Homereact from '../../assets/homereact.svg';
 
 // social import
-import Vectortwitter from '../../../assets/Vectortiwtter.svg';
-import Vectorlinkedin from '../../../assets/Vectorlinkeding.svg';
-import VectorInstagram from '../../../assets/Vectorinstagram.svg';
-import Vectorwhatsapp from '../../../assets/Vectorwhatsapp.svg';
+import Vectortwitter from '../../assets/Vectortiwtter.svg';
+import Vectorlinkedin from '../../assets/Vectorlinkeding.svg';
+import VectorInstagram from '../../assets/Vectorinstagram.svg';
+import Vectorwhatsapp from '../../assets/Vectorwhatsapp.svg';
 
 import Navbar from '../../components/navbar/Navbar';
 
@@ -23,7 +24,7 @@ function Home() {
       <div className="homeContent">
         <div className="homeContenHeader">
           <div className="homeContentImg">
-            <img src="../../../assets/my.png" alt="cruz" />
+            <img src={My} alt="cruz" />
             <ul>
               <li>
                 <img src={Homejavascripts} alt="Homejavascripts" />

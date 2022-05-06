@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import Vectorcontact from '../../../assets/Vectorcontact';
-import Vectorhome from '../../../assets/Vectorhome';
-import Vectormenu from '../../../assets/Vectormenu';
-import Vectorproyects from '../../../assets/Vectorproyects';
-import Vectorservices from '../../../assets/Vectorservices';
-import Vectorclose from '../../../assets/Vectorclose';
-import LinkedinSvg from '../../../assets/Vectorlinkeding.svg';
-import InstagramSvg from '../../../assets/Vectorinstagram.svg';
-import GithubSvg from '../../../assets/Vectorgithub.svg';
+import Vectorcontact from '../../assets/Vectorcontact';
+import Vectorhome from '../../assets/Vectorhome';
+import Vectormenu from '../../assets/Vectormenu';
+import Vectorproyects from '../../assets/Vectorproyects';
+import Vectorservices from '../../assets/Vectorservices';
+import Vectorclose from '../../assets/Vectorclose';
+import LinkedinSvg from '../../assets/Vectorlinkeding.svg';
+import InstagramSvg from '../../assets/Vectorinstagram.svg';
+import GithubSvg from '../../assets/Vectorgithub.svg';
 import './navbar.sass';
 
 function Navbar() {

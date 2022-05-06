@@ -1,29 +1,29 @@
 import React from 'react';
 
 //*-----Iconos Cards-----*//
-import DownArrow from '../../../assets/downarrow.svg';
-import BackIcon from '../../../assets/backend.svg';
-import DesingIcon from '../../../assets/desing.svg';
-import FrondIcon from '../../../assets/skillfrond.svg';
-import DataBaseIcon from '../../../assets/database.svg';
+import DownArrow from '../../assets/downarrow.svg';
+import BackIcon from '../../assets/backend.svg';
+import DesingIcon from '../../assets/desing.svg';
+import FrondIcon from '../../assets/skillfrond.svg';
+import DataBaseIcon from '../../assets/database.svg';
 
 import Skill from './skill/Skill';
 //*-----Iconos Front-end-----*//
-import HtmlIcon from '../../../assets/html.svg';
-import CssIcon from '../../../assets/css.svg';
-import JavaScriptIcon from '../../../assets/javascripts.svg';
-import ReactIcon from '../../../assets/react.svg';
-import NextIcon from '../../../assets/nextjs.svg';
+import HtmlIcon from '../../assets/html.svg';
+import CssIcon from '../../assets/css.svg';
+import JavaScriptIcon from '../../assets/javascripts.svg';
+import ReactIcon from '../../assets/react.svg';
+import NextIcon from '../../assets/nextjs.svg';
 //*-----Iconos Back-end-----*//
-import NodeIcon from '../../../assets/node.svg';
-import PhpIcon from '../../../assets/php.svg';
+import NodeIcon from '../../assets/node.svg';
+import PhpIcon from '../../assets/php.svg';
 //*-----Iconos Desing-----*//
-import FigmaIcon from '../../../assets/figma.svg';
-import PhotoshopIcon from '../../../assets/photoshop.svg';
+import FigmaIcon from '../../assets/figma.svg';
+import PhotoshopIcon from '../../assets/photoshop.svg';
 //*-----Data Base-----*//
-import MongoIcon from '../../../assets/mongo.svg';
-import SqlIcon from '../../../assets/sql.svg';
-import MySqlIcon from '../../../assets/mysql.svg';
+import MongoIcon from '../../assets/mongo.svg';
+import SqlIcon from '../../assets/sql.svg';
+import MySqlIcon from '../../assets/mysql.svg';
 
 import './skills.sass';
 

@@ -1,6 +1,6 @@
-import Whatsapp from '../../../assets/Vectorwhatsapp.svg';
-import Instagram from '../../../assets/Vectorinstagram.svg';
-import Email from '../../../assets/Vectoremail.svg';
+import Whatsapp from '../../assets/Vectorwhatsapp.svg';
+import Instagram from '../../assets/Vectorinstagram.svg';
+import Email from '../../assets/Vectoremail.svg';
 
 import './footer.sass';
 

@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import BtnUp from '../../../assets/btnup.svg';
+import BtnUp from '../../assets/btnup.svg';
 import './button.sass';
 
 function ButtonUp() {
